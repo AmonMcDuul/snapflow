@@ -145,3 +145,7 @@ Built by AmonMcDuul
 
 ## Licence
 MIT License — free to use in commercial or personal projects.
+
+## Acknowledgements & Notes
+Layout is powered by dagre.
+The library is intentionally minimal — focused on readable SVG output and a modular codebase that’s easy to extend.
