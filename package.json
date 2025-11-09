@@ -1,41 +1,37 @@
 {
-  "name": "snapflow",
+  "name": "flowrender",
   "version": "1.0.0",
-  "description": "Code-first flowchart generator",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "description": "A lightweight TypeScript library for rendering clean SVG flowcharts with zoom and pan support.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --sourcemap --clean",
-    "build:watch": "tsup src/index.ts --format cjs,esm --dts --watch",
-    "test": "vitest",
-    "lint": "eslint . --ext .ts",
-    "prepare": "husky install"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "flowchart",
-    "flow",
+    "svg",
+    "typescript",
     "diagram",
-    "snapflow"
+    "visualization"
   ],
   "author": "AmonMcDuul",
   "license": "MIT",
   "devDependencies": {
-    "@types/dagre": "^0.7.53",
-    "@types/node": "^24.9.2",
-    "eslint": "^9.39.0",
-    "eslint-config-prettier": "^10.1.8",
-    "husky": "^9.1.7",
-    "lint-staged": "^15.5.2",
-    "prettier": "^3.6.2",
-    "tsup": "^8.5.0",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.6"
-  },
-  "dependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "@types/dagre": "^0.7.47",
     "dagre": "^0.8.5"
+  },
+  "peerDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AmonMcDuul/flowrender/"
   }
 }

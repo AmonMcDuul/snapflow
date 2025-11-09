@@ -1,8 +1,8 @@
 <img width="430" height="921" alt="image" src="https://github.com/user-attachments/assets/134ce657-d820-40be-888a-9d61617b2425" />
 
-# 🌀 SimpleFlow — Elegant SVG Flowchart Renderer
+# 🌀 FlowRender — Elegant SVG Flowchart Renderer
 
-**SimpleFlow** is a lightweight TypeScript library for rendering clean, responsive, and zoomable SVG flowcharts from structured JSON data.
+**FlowRender** is a lightweight TypeScript library for rendering clean, responsive, and zoomable SVG flowcharts from structured JSON data.
 
 It automatically handles layout (via [dagre](https://github.com/dagrejs/dagre)), shapes, edges, and interaction, making it ideal for visualizing processes, diagrams, or workflows — all in pure SVG.
 
@@ -24,14 +24,14 @@ It automatically handles layout (via [dagre](https://github.com/dagrejs/dagre)),
 Install via npm (when published) or use directly from your local build:
 
 # when published to npm
-npm install simpleflow
+npm install FlowRender
 
 # or locally during development (example)
 # build your package and import from dist/
 
 Then import and render a flowchart:
 
-import { renderFlowToSVG } from "simpleflow"; // or from your built dist
+import { renderFlowToSVG } from "FlowRender"; // or from your built dist
 
 const container = document.getElementById("flowchart");
 
@@ -220,7 +220,7 @@ Minimal example HTML (/examples/basic/index.html):
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>SimpleFlow Demo</title>
+    <title>FlowRender Demo</title>
   </head>
   <body>
     <div id="flowchart" class="sf-flow-container" style="height:600px;"></div>
@@ -233,7 +233,7 @@ example.js should import renderFlowToSVG from your built bundle or source and ca
 
 If you use TypeScript (recommended), import types for better IntelliSense:
 
-import type { FlowData, FlowNode } from "simpleflow"; // or from './src/core/types' in dev
+import type { FlowData, FlowNode } from "FlowRender"; // or from './src/core/types' in dev
 
 VS Code will then show parameters and autocomplete when calling renderFlowToSVG.
 📜 License
