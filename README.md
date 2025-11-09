@@ -110,6 +110,7 @@ The chart supports:
 
 All styles (both DOM and SVG) are injected automatically. Styles are namespaced with the sf- prefix, so they won’t interfere with your app.
 Class	Purpose
+```ts
 .sf-flow-container	Main container for the chart
 .sf-flow-title	Title above the chart
 .sf-svg-wrapper	Scrollable SVG container
@@ -117,7 +118,7 @@ Class	Purpose
 .sf-edge	Connector line
 .sf-label	Node text label
 .sf-edge-label	Edge text label
-
+```
 You can override these CSS rules in your app's stylesheet.
 
 ## Architecture Overview
