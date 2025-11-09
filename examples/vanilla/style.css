@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 2rem;
+    color: #333;
+  }
+  
+  h1 {
+    margin-top: 0;
+    color: #1a1a1a;
+  }
+  
+  #flowchart {
+    border: 2px dashed #ccc;
+    background: white;
+    width: 50%;
+    height: 800px;
+    overflow: auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #flowchart svg {
+    min-width: 100%;
+    min-height: 100%;
+  }
